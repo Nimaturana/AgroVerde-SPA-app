@@ -7,19 +7,18 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 
 ---
 
-
 ## 📋 **Tabla de Contenidos**
-- [Autor](#-autor-1)
+- [Autores](#-autores)
 - [Descripción del Proyecto](#-descripción-del-proyecto)
 - [Caso de Negocio](#-caso-de-negocio)
 - [Características Principales](#-características-principales)
 - [Requisitos Técnicos](#-requisitos-técnicos)
-- [Arquitectura](#-arquitectura-1)
+- [Arquitectura](#-arquitectura)
 - [Instalación](#-instalación)
-- [Configuración](#-configuración-1)
+- [Configuración](#-configuración)
 - [Endpoints API](#-endpoints-api)
 - [Capturas de Pantalla](#-capturas-de-pantalla)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas-1)
+- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
 
 ---
 
@@ -115,7 +114,7 @@ Optimizar logística y gestión de pedidos en simultáneo, fortaleciendo la cade
 
 ---
 
-## 🏗️ **Arquitectura**
+##  **Arquitectura**
 
 La aplicación sigue el patrón **MVVM (Model-View-ViewModel)** con **Clean Architecture**:
 ```

@@ -7,14 +7,9 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 
 ---
 
-## 👨‍💻 **Autores**
-
-**[Nicolas Maturana Y Andy Navarrete]**
-
----
 
 ## 📋 **Tabla de Contenidos**
-
+- [Autor](#-autor)
 - [Descripción del Proyecto](#-descripción-del-proyecto)
 - [Caso de Negocio](#-caso-de-negocio)
 - [Características Principales](#-características-principales)
@@ -22,13 +17,17 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 - [Arquitectura](#-arquitectura)
 - [Instalación](#-instalación)
 - [Configuración](#-configuración)
-- [Funcionalidades Implementadas](#-funcionalidades-implementadas)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Endpoints API](#-endpoints-api)
 - [Capturas de Pantalla](#-capturas-de-pantalla)
 - [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Evaluación EP3](#-evaluación-ep3)
 - [Autor](#-autor)
+
+---
+
+
+## 👨‍💻 **Autores**
+
+**[Nicolas Maturana Y Andy Navarrete]**
 
 ---
 
@@ -198,7 +197,8 @@ Ya configurados en el proyecto:
 Configurado en `res/xml/file_paths.xml` y referenciado en el manifest.
 
 ### **3. Credenciales de prueba**
-Usuario demo preconfigurado:
+Puedes crear un usuario cualquiera este funcionara
+por ejemplo:
 ```
 Email: demo@agroverde.cl
 Password: 123456
@@ -209,96 +209,6 @@ Usa **wttr.in** (sin API key requerida). Para cambiar a OpenWeatherMap:
 1. Obtener API key en https://openweathermap.org/api
 2. Reemplazar en `util/ClimaUtils.kt`
 
----
-
-## 🎯 **Funcionalidades Implementadas**
-
-### **✅ Requisitos EP3 Cumplidos**
-
-| Requisito | Estado | Implementación |
-|-----------|--------|----------------|
-| **IE3.1** Diseño visual coherente | ✅ 100% | Theme personalizado, componentes reutilizables |
-| **IE3.2** Navegación | ✅ 100% | Navigation Compose con 6 pantallas |
-| **IE3.3** Formularios validados | ✅ 100% | Login y Registro con validaciones en tiempo real |
-| **IE3.4** Gestión de estado | ✅ 100% | ViewModels con StateFlow, estados de carga/error |
-| **IE3.5** Animaciones | ✅ 100% | fadeIn/Out, slideIn, animateItem, animateContentSize |
-| **IE3.6** Persistencia local | ✅ 100% | DataStore + LocalImageStorage para foto de perfil |
-| **IE3.7** Recursos nativos (≥2) | ✅ 100% | Cámara/Galería + API Clima |
-| **IE3.8** Consumo API | ✅ 100% | wttr.in para clima, preparado para backend |
-
----
-
-## 📂 **Estructura del Proyecto**
-```
-app/src/main/java/com/example/agroverdespamovil/
-├── components/                    # Componentes reutilizables
-│   ├── AgroButton.kt
-│   ├── AgroTextField.kt
-│   ├── EmptyStateView.kt
-│   ├── ErrorView.kt
-│   ├── ImagePicker.kt
-│   ├── LoadingIndicator.kt
-│   ├── ProductCard.kt
-│   └── TopAppBarWithProfile.kt
-│
-├── data/                          # Capa de datos
-│   ├── local/
-│   │   ├── LocalImageStorage.kt   # Almacenamiento de imágenes
-│   │   └── PreferencesManager.kt  # DataStore (token, sesión)
-│   ├── remote/
-│   │   ├── ApiService.kt
-│   │   └── AuthInterceptor.kt
-│   └── repository/
-│       ├── PedidoRepository.kt
-│       ├── ProductoRepository.kt
-│       └── UsuarioRepository.kt
-│
-├── model/                         # Modelos de dominio
-│   ├── Pedido.kt
-│   ├── Producto.kt
-│   ├── Productor.kt
-│   └── Usuario.kt
-│
-├── navigation/                    # Navegación
-│   ├── NavGraph.kt
-│   └── Screen.kt
-│
-├── network/                       # Configuración de red
-│   ├── ApiConfig.kt
-│   ├── NetworkResult.kt
-│   └── RetrofitClient.kt
-│
-├── ui/theme/                      # Tema y estilos
-│   ├── screen/                    # Pantallas
-│   │   ├── DetalleProductoScreen.kt
-│   │   ├── HomeScreen.kt
-│   │   ├── LoginScreen.kt
-│   │   ├── PedidosScreen.kt
-│   │   ├── PerfilScreen.kt
-│   │   ├── ProductosScreen.kt
-│   │   └── RegistroScreen.kt
-│   ├── Color.kt
-│   ├── Theme.kt
-│   └── Type.kt
-│
-├── util/                          # Utilidades
-│   ├── CameraUtils.kt             # Helpers para cámara
-│   ├── ClimaUtils.kt              # API del clima
-│   ├── Constants.kt
-│   ├── ImageUtils.kt
-│   ├── LocationUtils.kt           # GPS (preparado)
-│   ├── NetworkUtils.kt
-│   ├── PermissionUtils.kt
-│   └── ValidationUtils.kt
-│
-├── viewmodel/                     # ViewModels
-│   ├── AuthViewModel.kt
-│   ├── PedidoViewModel.kt
-│   ├── PerfilViewModel.kt
-│   └── ProductoViewModel.kt
-│
-└── MainActivity.kt                # Actividad principal
-```
 
 ---
 
@@ -336,15 +246,23 @@ GET https://wttr.in/{ciudad}?format=j1
 
 ### **Login y Registro**
 Pantalla de inicio de sesión con validaciones en tiempo real y animaciones fluidas.
+<img width="399" height="903" alt="image" src="https://github.com/user-attachments/assets/b7c5fa47-d2e9-426f-b9c8-b8b00c29d71f" />
+<img width="392" height="898" alt="image" src="https://github.com/user-attachments/assets/471fe12f-8497-420b-a89f-658928a9d630" />
+
 
 ### **Home / Catálogo**
 Lista de productos orgánicos con filtros por categoría, certificación y región.
+<img width="386" height="896" alt="image" src="https://github.com/user-attachments/assets/24a22833-d316-43be-9c9b-0cea8aa67376" />
 
 ### **Perfil con Cámara**
 Gestión de perfil con captura de foto usando cámara nativa o selección desde galería.
+<img width="388" height="893" alt="image" src="https://github.com/user-attachments/assets/729e6d92-3b2f-47c9-bab3-1be03d7b9b2d" />
+
 
 ### **Clima en Tiempo Real**
 Consulta del clima actual con datos de temperatura, humedad y viento.
+<img width="390" height="892" alt="image" src="https://github.com/user-attachments/assets/698d93d9-215e-405d-ab7f-885877f1dc4d" />
+
 
 ---
 
@@ -384,24 +302,6 @@ Consulta del clima actual con datos de temperatura, humedad y viento.
 
 ---
 
-## 📊 **Evaluación EP3**
-
-### **Cumplimiento de Indicadores de Evaluación:**
-
-| Indicador | Ponderación | Cumplimiento | Evidencia |
-|-----------|-------------|--------------|-----------|
-| **IE3.1** Diseño visual coherente | 12% | ✅ 100% | Theme, Components, Layouts |
-| **IE3.2** Navegación | 12% | ✅ 100% | NavGraph con 6 pantallas |
-| **IE3.3** Formularios validados | 12% | ✅ 100% | Login/Registro con validaciones |
-| **IE3.4** Gestión de estado | 16% | ✅ 100% | ViewModels + StateFlow |
-| **IE3.5** Animaciones | 8% | ✅ 100% | Múltiples animaciones Compose |
-| **IE3.6** Persistencia local | 12% | ✅ 100% | DataStore + LocalImageStorage |
-| **IE3.7** Recursos nativos (≥2) | 12% | ✅ 100% | Cámara/Galería + Clima API |
-| **IE3.8** Consumo API | 16% | ✅ 100% | wttr.in + preparado para backend |
-
-**Nota estimada:** 100% (7.0) ✅
-
----
 
 ## 📝 **User Flows**
 
@@ -476,11 +376,3 @@ Consulta del clima actual con datos de temperatura, humedad y viento.
 
 ---
 
-## 👨‍💻 **Autor**
-
-**[Tu Nombre]**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- Email: tu-email@ejemplo.com
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-
----

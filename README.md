@@ -24,7 +24,7 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 ---
 
 
-## 👨‍💻 **Autores**
+## 👨‍💻 Autores
 
 **[Nicolas Maturana Y Andy Navarrete]**
 

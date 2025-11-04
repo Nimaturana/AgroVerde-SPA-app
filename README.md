@@ -9,22 +9,22 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 
 
 ## 📋 **Tabla de Contenidos**
-- [Autor](#-autor)
+- [Autor](#-autor-1)
 - [Descripción del Proyecto](#-descripción-del-proyecto)
 - [Caso de Negocio](#-caso-de-negocio)
 - [Características Principales](#-características-principales)
 - [Requisitos Técnicos](#-requisitos-técnicos)
-- [Arquitectura](#-arquitectura)
+- [Arquitectura](#-arquitectura-1)
 - [Instalación](#-instalación)
-- [Configuración](#-configuración)
+- [Configuración](#-configuración-1)
 - [Endpoints API](#-endpoints-api)
 - [Capturas de Pantalla](#-capturas-de-pantalla)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+- [Tecnologías Utilizadas](#-tecnologías-utilizadas-1)
 
 ---
 
 
-## 👨‍💻 Autores
+## 👨‍💻 **Autores**
 
 **[Nicolas Maturana Y Andy Navarrete]**
 

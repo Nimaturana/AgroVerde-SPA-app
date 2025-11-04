@@ -7,22 +7,6 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 
 ---
 
-## 📋 **Tabla de Contenidos**
-- [Autores](#autores)
-- [Descripción del Proyecto](#descripción-del-proyecto)
-- [Caso de Negocio](#caso-de-negocio)
-- [Características Principales](#características-principales)
-- [Requisitos Técnicos](#requisitos-técnicos)
-- [Arquitectura](#arquitectura)
-- [Instalación](#instalación)
-- [Configuración](#configuración)
-- [Endpoints API](#endpoints-api)
-- [Capturas de Pantalla](#capturas-de-pantalla)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-
-
----
-
 
 ## 👨‍💻 **Autores**
 

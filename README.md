@@ -20,7 +20,6 @@ Aplicación móvil para la distribución de productos agrícolas orgánicos, con
 - [Endpoints API](#-endpoints-api)
 - [Capturas de Pantalla](#-capturas-de-pantalla)
 - [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Autor](#-autor)
 
 ---
 
@@ -246,21 +245,25 @@ GET https://wttr.in/{ciudad}?format=j1
 
 ### **Login y Registro**
 Pantalla de inicio de sesión con validaciones en tiempo real y animaciones fluidas.
+
 <img width="399" height="903" alt="image" src="https://github.com/user-attachments/assets/b7c5fa47-d2e9-426f-b9c8-b8b00c29d71f" />
 <img width="392" height="898" alt="image" src="https://github.com/user-attachments/assets/471fe12f-8497-420b-a89f-658928a9d630" />
 
 
 ### **Home / Catálogo**
 Lista de productos orgánicos con filtros por categoría, certificación y región.
+
 <img width="386" height="896" alt="image" src="https://github.com/user-attachments/assets/24a22833-d316-43be-9c9b-0cea8aa67376" />
 
 ### **Perfil con Cámara**
 Gestión de perfil con captura de foto usando cámara nativa o selección desde galería.
+
 <img width="388" height="893" alt="image" src="https://github.com/user-attachments/assets/729e6d92-3b2f-47c9-bab3-1be03d7b9b2d" />
 
 
 ### **Clima en Tiempo Real**
 Consulta del clima actual con datos de temperatura, humedad y viento.
+
 <img width="390" height="892" alt="image" src="https://github.com/user-attachments/assets/698d93d9-215e-405d-ab7f-885877f1dc4d" />
 
 
